@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="/bootstrap.css">
+  <style>
+    #user-info {
+      text-align: center;
+    }
+
+    #profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary z-1">
+    <div class="container-fluid">
+      <a class="navbar-brand text-primary" href="#">Recruit-Online</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active disabled">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Sign out</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Find Jobs" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center vh-100">
+      <div class="col-md-6">
+        <div id="user-info">
+          <img id="profile-pic" src="" alt="Profile Picture" class="img-fluid rounded-circle">
+          <h1 id="name"></h1>
+          <p id="age"></p>
+          <p id="local-govt"></p>
+          <p id="address"></p>
+          <p id="description"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/bootstrap.js"></script>
+  <script type="module">
+    import { domContent, fetchData } from "./exports.js";
+    domContent();
+    fetchData();
+  </script>
+</body>
+</html>

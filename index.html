@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+    <style>
+        .custom-card{
+            width: 90vw;
+            max-width: 600px;
+        }
+        .section{
+            background-image: url(/jbs.png);
+            background-size: cover;
+            height: 80vh;
+            background-attachment: fixed;
+            
+        }
+        .card {
+            border: 1px solid;
+            background-clip: padding-box;
+            border-image: linear-gradient(to right, var(--primary-color) 50%, var(--secondary-color) 50%);
+            border-image-slice: 2;
+        }
+        
+    </style>
+    <style>
+        :root {
+          --primary-color: #0d6efd; /* Replace with your primary color */
+          --secondary-color: #6c757d; /* Replace with your secondary color */
+        }
+      </style>
+      
+</head>
+<body>
+    <nav class="z-1 navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="#">Recruit-Online</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Sign up</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Find Jobs" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="container container-fluid section">
+        <div class="position-absolute top-50 start-50 translate-middle card" id="div-select">
+            <div class="card custom-card ">
+                <div class="card-body">
+                  <h5 class="card-title d-flex display-5 justify-content-center" style="font-weight: bold;">Our Solutions</h5>
+                  <p class="card-text d-flex justify-content-center h3" style="font-weight: bold; color: blue;">Are you a job seeker ot an employer?</p>
+                  <div class="d-flex justify-content-center">
+                    <div class="m-auto">
+                      <a href="#" class="btn btn-outline-primary" id="job_seeker">Job Seeker</a>
+                    </div>
+                    <div class="m-auto">
+                      <a href="#" class="btn btn-outline-secondary" id="employer">Employer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </secton>
+    <footer class="d-flex position-absolute top-100 m-0">
+        <h3 class="d-flex justify-content-center">&copy; Recruit-Online 2023</h3>
+    </footer>
+      <script src="/bootstrap.js"></script>
+      <script type="module">
+        import { linking } from "/exports.js";
+        linking()
+      </script>
+      
+</body>
+</html>

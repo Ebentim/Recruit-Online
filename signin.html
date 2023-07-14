@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary z-1">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" href="#">Recruit-Online</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">Sign up</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Find Jobs" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <main>
+        <section class="signup-form">
+            <form action="#" method="post" class="form-control d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                <h4 class="navbar-brand text-primary">
+                    Recruit-Online
+                </h4>
+                <p class="text-primary">Sign up</p>
+                <p>Already have an account? <a href="#" id="sign-in-here">Sign in</a></p>
+                </div>
+                <div class="mw-80 d-flex pt-3 flex-column shadow mb-3" id="part_one_form">
+                    <fieldset id="category" class="d-flex justify-content-center mt-3 mb-3">
+                        <label for="Job-seeker">Job-seeker </label>
+                        <input type="radio" value="Job-seeker" name="category" id="Job-seeker" checked class="me-5">
+                        <label for="Employer" class="me-2">Employer</label>
+                            <input type="radio" value="Employer" name="category" id="Employer" selected>
+                    </fieldset>
+                    <fieldset id="details" class="d-flex pt-3 flex-column mb-2">
+                            <input type="text" name="details" id="First-name" placeholder="First name" min="3" required class="m-auto mb-3 p-2">
+                            <input type="text" name="details" id="Last-name" placeholder="Last name" min="3" required class="m-auto mb-3 p-2" style="max-width: 95%;">
+                            <input type="text" id="middle-name" placeholder="Middle name (Optional)" min="3" class="m-auto mb-3 p-2">
+                    </fieldset>
+                    <fieldset id="signin-details" class=" d-flex pt-3 flex-column mb-3">
+                        <input type="email" name="signin-details" id="email-address" placeholder="E-mail" required class="m-auto mb-3 p-2">
+                        <input type="password" id="password" name="signin-details" required placeholder="Password" class="m-auto mb-3 p-2">
+                        <input type="password" name="signin-details" id="confirm-password" required placeholder="confirm-password" class="m-auto mb-3 p-2">
+                    </fieldset>
+                </div>
+                <!-- Personal Information goes here -->
+                <p class="fw-bold">Personal Information</p>
+                <div class="mt-3 justify-content-center align-items-center d-flex" id="part_two_form">
+                  <fieldset id="personal_information" class="mw-80 d-flex pt-3 flex-column shadow mb-3">
+                    <fieldset class="d-flex justify-content-evenly">
+
+                      <!-- Gender -->
+                      <label for="male">Male</label>
+                      <input type="radio" name="Gender" id="male" checked>
+                      <label for="female">Female</label>
+                      <input type="radio" name="Gender" id="female">
+                    </fieldset>
+                    <label for="date_of_birth"class="p-1">Date of birth <span style="color: red; font-weight: 900;">*</span></label>
+                    <input type="date" name="date_of_birth" id="date_of_birth" class="m-auto p-2 mb-3" style="width: 80%;" required>
+                    <label for="state_of_origin p-1">State of Origin <span style="color: red; font-weight: 900;">*</span></label>
+                    <select name="state_of Origin" id="state_of_origin" class="m-auto p-2" style="width: 80%;" required>
+                      <option value="Abia">Abia</option>
+                      <option value="Adamawa">Adamawa</option>
+                      <option value="Akwa_Ibom">Akwa Ibom</option>
+                      <option value="Anambra">Anambra</option>
+                      <option value="Bauchi">Bauchi</option>
+                      <option value="Bayelsa">Bayelsa</option>
+                      <option value="Benue">Benue</option>
+                      <option value="Borno">Borno</option>
+                      <option value="Cross_River">Cross River</option>
+                      <option value="Delta">Delta</option>
+                      <option value="Ebonyi">Ebonyi</option>
+                      <option value="Edo">Edo</option>
+                      <option value="Ekiti">Ekiti</option>
+                      <option value="Enugu">Enugu</option>
+                      <option value="Gombe">Gombe</option>
+                      <option value="Imo">Imo</option>
+                      <option value="Jigawa">Jigawa</option>
+                      <option value="Kaduna">Kaduna</option>
+                      <option value="Kano">Kano</option>
+                      <option value="Katsina">Katsina</option>
+                      <option value="Kebbi">Kebbi</option>
+                      <option value="Kogi">Kogi</option>
+                      <option value="Kwara">Kwara</option>
+                      <option value="Lagos" selected>Lagos</option>
+                      <option value="Nasarawa">Nasarawa</option>
+                      <option value="Niger">Niger</option>
+                      <option value="Ogun">Ogun</option>
+                      <option value="Ondo">Ondo</option>
+                      <option value="Osun">Osun</option>
+                      <option value="Oyo">Oyo</option>
+                      <option value="Plateau">Plateau</option>
+                      <option value="Rivers">Rivers</option>
+                      <option value="Sokoto">Sokoto</option>
+                      <option value="Taraba">Taraba</option>
+                      <option value="Yobe">Yobe</option>
+                      <option value="Zamfara">Zamfara</option>
+                    </select>
+                    <label for="address" class="p-1 mt-2">Residential Address <span style="color: red; font-weight: 900;">*</span></label>
+                    <input type="text" id="address" name="address"  class="m-auto p-2">
+                    <label for="c_letter" class="p-1 mt-2">Cover Letter<span style="color: red; font-weight: 900;"> *</span></label>
+                    <input type="text" name="c_letter" id="c_letter" class="m-auto p-2">
+                    <label for="cv" class="p-1 mt-2">upload your cv <span style="color: red;">doc, docx, pdf</span></label>
+                    <input type="file" name="cv" id="cv" class="m-auto p-2" style="width: 80%;">
+                  </fieldset>
+                </div>
+                <p class="mt-2">By Clicking the sign up button below, you agree to our terms of service and conditions as well as ur privacy policy</p>
+                <input type="submit" value="sign up" id="sign_up" class="btn btn-outline-primary
+                ">
+            </form>
+        </section>
+        <section class="signin-form" style="display: none;">
+            <form action="#" method="post" class="form-control d-flex flex-column  justify-content-center align-items-center card shadow m-auto mw-80 position-absolute top-50 start-50 translate-middle">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="navbar-brand text-primary">
+                        Recruit-Online
+                    </h4>
+                    <p class="text-primary">Sign in</p>
+                    <p>Don't have an account? <a href="#" id="sign-up-here">Sign up</a></p>
+                    </div>
+                <input type="email" name="user-email" id="user-email" placeholder="Email" required class="mb-3" >
+                <input type="password" name="user-password" id="user-password" placeholder="Password" required>
+                <button class="btn btn-outline-primary mt-3 rounded-1 p-1">Sign in</button>
+            </form>
+        </section>
+    </main>
+    <script src="./bootstrap.js"></script>
+    <script type="module">
+        import { displayForm } from "/exports.js";
+        displayForm()
+    </script>
+</body>
+</html>
