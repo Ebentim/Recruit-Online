@@ -38,8 +38,8 @@ export function linking(){
     // variable declaration and initialization;
     const job_seeker = document.querySelector("#job_seeker");
     const employer = document.querySelector("#employer");
-    job_seeker.addEventListener("click", () => location.replace("./signin.html"));
-    employer.addEventListener("click", () => location.replace("./signin.html"));
+    job_seeker.addEventListener("click", () => location.replace("signin.html"));
+    employer.addEventListener("click", () => location.replace("signin.html"));
 }
 
 // Dashboard data from the database
