@@ -145,8 +145,41 @@
         </section>
     </main>
     <script src="bootstrap.js"></script>
-    <script type="module">
-        import { displayForm } from "exports.js";
+    <script>
+      
+        // form display.
+        function displayForm() {
+          // variable declaration and initiation;
+          const nextButton = document.querySelector("#next_button");
+
+          const signUp = document.querySelector(".signup-form");
+
+          const signIn = document.querySelector(".signin-form");
+
+          const sign_in_here = document.querySelector("#sign-in-here");
+
+          const sign_up_here = document.querySelector("#sign-up-here");
+
+          const partOne = document.querySelector("#part_one_form");
+
+          const partTwo = document.querySelector("#part_two_form");
+
+          partTwo.style.display = "none";
+
+          console.log(nextButton)
+          sign_in_here.addEventListener("click", () => {
+            signUp.style.display = "none";
+            signIn.style.display = "block";
+          })
+          sign_up_here.addEventListener("click", () => {
+            signIn.style.display = "none";
+            signUp.style.display = "block";
+          })
+          nextButton.addEventListener("click", () => {
+            partOne.style.display = "none";
+            partTwo.style.display = "block";
+          });
+        }
         displayForm()
     </script>
 </body>

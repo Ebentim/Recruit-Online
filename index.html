@@ -84,8 +84,14 @@
         <h3 class="d-flex justify-content-center">&copy; Recruit-Online 2023</h3>
     </footer>
       <script src="bootstrap.js"></script>
-      <script type="module">
-        import { linking } from "/exports.js";
+      <script type=>
+        function linking() {
+            // variable declaration and initialization;
+            const job_seeker = document.querySelector("#job_seeker");
+            const employer = document.querySelector("#employer");
+            job_seeker.addEventListener("click", () => location.replace("signin.html"));
+            employer.addEventListener("click", () => location.replace("signin.html"));
+          }
         linking()
       </script>
       
